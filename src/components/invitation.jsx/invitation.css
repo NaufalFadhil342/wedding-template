@@ -1,0 +1,126 @@
+.invitation {
+  width: 100%;
+  height: auto;
+  margin: 8rem 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.invitation .layer {
+  width: 100%;
+  height: auto;
+  padding: 8rem 8%;
+  background-color: rgb(228, 150, 149, 0.35);
+  display: flex;
+  justify-content: center;
+}
+
+.invitation .layer .invitation-form {
+  width: 70%;
+  height: auto;
+  padding: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.invitation-form .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.invitation-form .header h1 {
+  font-size: 3em;
+  font-family: var(--body-font);
+  color: var(--secondary-color);
+}
+
+.invitation-form .body {
+  width: 100%;
+  height: auto;
+}
+
+.invitation-form .body form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.body form .first,
+.body form .second {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.body form .first input,
+.body form .second input,
+.body form .second select,
+.body form .third textarea {
+  width: 100%;
+  height: 2rem;
+  padding-left: 5px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  outline-color: none;
+}
+
+.body form .third {
+  width: 100%;
+}
+
+.body form .third textarea {
+  height: 8rem;
+  padding: 5px 0 0 5px;
+}
+
+.body form .actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.body form .actions .submit {
+  height: auto;
+  padding: 0.75rem 1rem;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 640px) {
+  .invitation .layer .invitation-form {
+    width: 80%;
+  }
+
+  .body form .first,
+  .body form .second {
+    flex-direction: column;
+    justify-content: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .invitation .layer .invitation-form {
+    width: 100%;
+    height: auto;
+    padding: 2rem;
+  }
+
+  .invitation-form .header h1 {
+    font-size: 2.5em;
+  }
+
+  .body form .actions .submit {
+    width: 100%;
+  }
+}

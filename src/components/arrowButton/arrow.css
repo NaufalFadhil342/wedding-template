@@ -1,0 +1,21 @@
+.prev-button,
+.next-button {
+  width: auto;
+  height: 4rem;
+  background-color: var(--main-color);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  transition: background-color, color 300ms ease-in-out;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  color: #3f3f3f;
+  background-color: #f0eaee;
+}
+
+.prev-button svg,
+.next-button svg {
+  font-size: 35px;
+}

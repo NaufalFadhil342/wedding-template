@@ -1,0 +1,81 @@
+.thanks {
+  width: 100%;
+  height: auto;
+  margin: 8rem 0 0 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.thanks .layer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 8%;
+  background-color: rgb(63, 63, 63, 0.6);
+}
+
+.thanks .layer .content {
+  width: 50%;
+  height: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(228, 150, 149, 0.5);
+  color: white;
+  outline: 2px solid white;
+  outline-offset: 6px;
+}
+
+.thanks .layer .content h1 {
+  font-size: 4.5em;
+  letter-spacing: 2.5px;
+  font-family: var(--header-font);
+  text-align: center;
+}
+
+.thanks .layer .content p {
+  font-size: 2.25em;
+  font-weight: 600;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .thanks .layer .content {
+    width: 60%;
+  }
+
+  .thanks .layer .content h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .thanks .layer .content {
+    padding: 2rem 1.7rem;
+  }
+
+  .thanks .layer .content h1 {
+    font-size: 3.5em;
+  }
+
+  .thanks .layer .content p {
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .thanks .layer .content {
+    width: 75%;
+  }
+
+  .thanks .layer .content h1 {
+    font-size: 3em;
+  }
+}

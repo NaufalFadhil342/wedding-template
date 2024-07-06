@@ -1,0 +1,101 @@
+.partner {
+  width: 100%;
+  height: auto;
+  margin: 8rem 0;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.partner .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--body-font);
+}
+
+.partner .header h1 {
+  color: var(--secondary-color);
+  font-size: 3em;
+  text-align: center;
+}
+
+.partner .body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.partner .body .partnerButton {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.partner .body .partnerData {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.partner .body .partnerData .man-maids {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.man-maids .manMaids-image {
+  width: 100%;
+  height: 27rem;
+  overflow: hidden;
+}
+
+.man-maids .manMaids-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.man-maids .caption {
+  width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.man-maids .caption h3 {
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  font-family: var(--body-font);
+}
+
+@media screen and (max-width: 768px) {
+  .partner .body .partnerData {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .partner .header h1 {
+    font-size: 2.5em;
+  }
+
+  .partner .body .partnerButton {
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+  }
+
+  .partner .body .partnerData {
+    grid-template-columns: 1fr;
+  }
+}

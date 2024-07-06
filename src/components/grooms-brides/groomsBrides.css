@@ -1,0 +1,133 @@
+.grooms-brides {
+  width: 100%;
+  height: auto;
+  padding: 0 8%;
+  margin: 8rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.grooms-brides .header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--body-font);
+}
+
+.grooms-brides .header h1 {
+  color: var(--secondary-color);
+  font-size: 3em;
+}
+
+.grooms-brides .body {
+  width: 100%;
+  height: auto;
+}
+
+.grooms-brides .body .grooms,
+.grooms-brides .body .brides {
+  width: 100%;
+  height: 30rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.grooms-brides .body .brides {
+  flex-direction: row-reverse;
+}
+
+.grooms .grooms-image,
+.brides .brides-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.grooms .grooms-image .img,
+.brides .brides-image .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.grooms .grooms-story,
+.brides .brides-story {
+  flex: 50%;
+  width: 100%;
+  height: 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: rgb(228, 150, 149, 0.07);
+}
+
+.grooms .grooms-story h1,
+.brides .brides-story h1 {
+  font-size: 2.25em;
+  font-family: var(--body-font);
+}
+
+.grooms .grooms-story p,
+.brides .brides-story p {
+  font-size: 1.2em;
+}
+
+.grooms .grooms-story h2,
+.brides .brides-story h2 {
+  font-size: 1.75em;
+  font-family: var(--header-font);
+}
+
+.grooms .grooms-story .more-about-grooms,
+.brides .brides-story .more-about-brides {
+  width: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.grooms .grooms-story .more-about-grooms a,
+.brides .brides-story .more-about-brides a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 25px;
+}
+
+@media screen and (max-width: 824px) {
+  .grooms-brides {
+    padding: 0 0;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .grooms-brides .body .grooms,
+  .grooms-brides .body .brides {
+    flex-direction: column;
+  }
+
+  .grooms-brides .body .grooms,
+  .grooms-brides .body .brides {
+    height: auto;
+  }
+
+  .grooms .grooms-image,
+  .brides .brides-image {
+    width: 100%;
+    height: 30rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grooms-brides .header h1 {
+    font-size: 2.5em;
+  }
+}

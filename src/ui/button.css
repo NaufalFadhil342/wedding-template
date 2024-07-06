@@ -1,0 +1,19 @@
+.button {
+  width: auto;
+  height: 4rem;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 22px;
+  border: none;
+  transition: background-color 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #dd8786;
+  cursor: pointer;
+}

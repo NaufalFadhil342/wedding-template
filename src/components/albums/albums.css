@@ -1,0 +1,99 @@
+.albums {
+  width: 100%;
+  height: auto;
+  margin-top: 8rem;
+  padding: 0 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.albums .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.albums .header h1 {
+  font-size: 3em;
+  font-family: var(--header-font);
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.albums .body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.albums .body .galleryData {
+  flex: 0 0 34%;
+  width: auto;
+  height: 27rem;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.albums .body .galleryData img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.albums .body .galleryData svg {
+  font-size: 25px;
+  position: absolute;
+  top: 47%;
+  left: 45%;
+  transform: rotate(0.25turn);
+  scale: 0;
+  transition: scale 400ms ease-in-out;
+  color: white;
+  z-index: 2;
+}
+
+.albums .body .galleryData:hover svg {
+  scale: 100%;
+}
+
+.albums .body .gallery::after {
+  content: '';
+  position: absolute;
+  background-color: rgb(228, 150, 149, 0.65);
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  transition: all 400ms ease-in-out;
+}
+
+.albums .body .gallery:hover::after {
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+  .albums .body {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .albums .body {
+    grid-template-columns: 1fr;
+  }
+
+  .albums .header h1 {
+    font-size: 2.5em;
+  }
+}

@@ -1,0 +1,159 @@
+.story {
+  width: 100%;
+  height: auto;
+  padding: 7rem 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.story h1 {
+  color: var(--secondary-color);
+  font-size: 3em;
+  text-align: center;
+  font-family: var(--body-font);
+}
+
+.story .history {
+  width: 100%;
+  height: auto;
+  margin-top: 5rem;
+}
+
+.story .history .historyData {
+  display: flex;
+  flex-direction: column;
+}
+
+.story .history .historyData .history-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.story .history .historyData:nth-child(even) .history-content {
+  flex-direction: row-reverse;
+}
+
+.story .history .historyData .history-content .image {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 2rem 9% 2rem 3%;
+  overflow: hidden;
+}
+
+.story .history .historyData:nth-child(even) .history-content .image {
+  padding: 2rem 3% 2rem 9%;
+}
+
+.story .history .historyData .history-content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.story .history .historyData .history-content .content {
+  flex: 50%;
+  padding: 2rem 3% 2rem 9%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.story .history .historyData:nth-child(even) .history-content .content {
+  padding: 2rem 9% 2rem 3%;
+}
+
+.story .history .historyData .history-content .content h2 {
+  font-size: 2em;
+  color: var(--secondary-color);
+  font-family: var(--body-font);
+}
+
+.story .history .historyData .history-content .content .date,
+.story .history .historyData .history-content .content .date {
+  font-family: var(--header-font);
+  font-size: 20px;
+}
+
+.story .history .historyData .history-content .content p,
+.story .history .historyData .history-content .content p {
+  font-size: 14px;
+}
+
+.story .history .historyData .listDate {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story .history .historyData .listDate .line {
+  width: 1.5px;
+  height: 100%;
+  display: block;
+  background-color: lightgrey;
+}
+
+.story .history .historyData .listDate .lbIcon {
+  width: 3.5rem;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .story .history .historyData .listDate {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .story .history .historyData .listDate .lbIcon {
+    width: 3rem;
+    left: 0;
+    transform: translateX(-1.4rem);
+  }
+
+  .story .history .historyData .history-content,
+  .story .history .historyData:nth-child(even) .history-content {
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 100%;
+  }
+
+  .story .history .historyData .history-content .image,
+  .story .history .historyData:nth-child(even) .history-content .image {
+    width: 90%;
+    padding: 0;
+  }
+
+  .story .history .historyData .history-content .content,
+  .story .history .historyData:nth-child(even) .history-content .content {
+    width: 90%;
+    flex: 100%;
+    padding: 2rem 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .story h1 {
+    font-size: 2.5em;
+  }
+
+  .story .history .historyData .history-content .image,
+  .story .history .historyData:nth-child(even) .history-content .image {
+    width: 100%;
+  }
+
+  .story .history .historyData .history-content .content,
+  .story .history .historyData:nth-child(even) .history-content .content {
+    width: 100%;
+  }
+}

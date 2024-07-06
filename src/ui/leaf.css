@@ -1,0 +1,12 @@
+.leaf {
+  width: 2em;
+  height: auto;
+  color: var(--secondary-color);
+  transform: rotate(0.5turn);
+}
+
+@media screen and (max-width: 480px) {
+  .leaf {
+    width: 1.8em;
+  }
+}
