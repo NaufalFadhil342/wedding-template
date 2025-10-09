@@ -74,5 +74,19 @@ wedding-template
 ```
 
 ## License
+MIT License © 2025 Naufal Fadhil
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files, to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions.
+
+The software is provided "as is", without warranty of any kind.
 
 ## Contact / Author Info
+
+**Muhammad Naufal Fadhil Rahmat**
+
+Web developer - Interactive, Responsive and Clean Design
+
+GitHub: https://github.com/NaufalFadhil342
+GitLab: https://gitlab.com/NaufalFadhil342
+Website: https://naudhil.netlify.app/
+LinkedIn: https://www.linkedin.com/in/muhammad-naufal-fadhil-rahmat
+Email: naufalfadhil342@gmail.com
