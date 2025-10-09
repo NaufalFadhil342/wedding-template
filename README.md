@@ -85,8 +85,8 @@ The software is provided "as is", without warranty of any kind.
 
 Web developer - Interactive, Responsive and Clean Design
 
-GitHub: https://github.com/NaufalFadhil342
-GitLab: https://gitlab.com/NaufalFadhil342
-Website: https://naudhil.netlify.app/
-LinkedIn: https://www.linkedin.com/in/muhammad-naufal-fadhil-rahmat
-Email: naufalfadhil342@gmail.com
+- GitHub: https://github.com/NaufalFadhil342
+- GitLab: https://gitlab.com/NaufalFadhil342
+- Website: https://naudhil.netlify.app/
+- LinkedIn: https://www.linkedin.com/in/muhammad-naufal-fadhil-rahmat
+- Email: naufalfadhil342@gmail.com
