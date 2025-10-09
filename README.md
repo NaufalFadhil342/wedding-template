@@ -12,7 +12,7 @@ MarWed is a single page application establishing for online invitation. It use f
 - **Gallery**: Contains photo album of the couple
 - **RSVP**: The form consists announcement for you to attend or no
 
-## Tect Stack
+## Tech Stack
 - Reactjs
 - React Router Dom
 - React Scroll
