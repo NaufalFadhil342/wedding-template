@@ -39,7 +39,7 @@ MarWed is a single page application establishing for online invitation. It use f
 7. The program is ready to use
 
 ## Production
-You might consider your program move from local to global. Following the step:
+You might consider your project can use globally, follow the step:
 1. Consider what is hosting you'd like to use
 2. You can push the project to your GitHub or Github account
 3. If you want to push the project direct to your hosting, you must run:
@@ -48,9 +48,9 @@ You might consider your program move from local to global. Following the step:
    // or
    yarn build
    ```
-4. Wait until the program finish and the result might `dist` or `build`
+4. Wait 'til the program finish and the result might `dist` or `build`
 5. Copy or drag the `dist` or `build` to your hosting
-6. Congrats, your website can be use globally
+6. Congrats, your website can use globally
 
 ## Folder Structure
 ```
